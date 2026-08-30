@@ -1,0 +1,1086 @@
+/* ========== Common CSS Start ========== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "DM Sans", sans-serif;
+    color: #34272b;
+    background: #fff;
+    line-height: 1.6;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button,
+input,
+textarea {
+    font-family: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+.container {
+    width: 100%;
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.section {
+    padding: 100px 0;
+}
+
+.small-title {
+    display: inline-block;
+    color: #a16c79;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+/* ========== Common CSS End ========== */
+
+
+/* ========== Header CSS Start ========== */
+
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+}
+
+.navbar {
+    min-height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    color: #6f4752;
+    font-family: "Playfair Display", serif;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 5px;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 35px;
+}
+
+.nav-menu a {
+    position: relative;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.nav-menu a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 0;
+    height: 1px;
+    background: #a16c79;
+    transition: 0.3s;
+}
+
+.nav-menu a:hover::after {
+    width: 100%;
+}
+
+.nav-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-icons a {
+    transition: 0.3s;
+}
+
+.nav-icons a:hover {
+    color: #a16c79;
+    transform: translateY(-2px);
+}
+
+.menu-btn {
+    display: none;
+    border: 0;
+    background: transparent;
+    font-size: 22px;
+}
+
+/* ========== Header CSS End ========== */
+
+
+/* ========== Hero CSS Start ========== */
+
+.hero {
+    position: relative;
+    min-height: 720px;
+    overflow: hidden;
+    background: #f7e9ec;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    top: -160px;
+    right: -160px;
+    width: 650px;
+    height: 650px;
+    border-radius: 50%;
+    background: #efd8de;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    min-height: 720px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 50px;
+}
+
+.hero-text {
+    padding-top: 50px;
+}
+
+.hero-text h1 {
+    margin: 18px 0 25px;
+    color: #463238;
+    font-family: "Playfair Display", serif;
+    font-size: 76px;
+    font-weight: 600;
+    line-height: 1.05;
+}
+
+.hero-text h1 span {
+    display: block;
+    color: #a16c79;
+    font-style: italic;
+}
+
+.hero-text p {
+    max-width: 480px;
+    margin-bottom: 35px;
+    color: #725f64;
+}
+
+.hero-buttons {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.primary-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 14px;
+    padding: 15px 24px;
+    border: 1px solid #a16c79;
+    background: #a16c79;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 700;
+    transition: 0.35s;
+}
+
+.primary-btn:hover {
+    border-color: #7e505d;
+    background: #7e505d;
+    transform: translateY(-4px);
+    box-shadow: 0 12px 25px rgba(126, 80, 93, 0.2);
+}
+
+.text-btn {
+    padding-bottom: 4px;
+    border-bottom: 1px solid #6f4752;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.hero-image {
+    position: relative;
+    max-width: 470px;
+    margin-left: auto;
+}
+
+.hero-image img {
+    position: relative;
+    z-index: 2;
+    height: 560px;
+    object-fit: cover;
+    border-radius: 235px 235px 0 0;
+}
+
+.image-circle {
+    position: absolute;
+    top: 35px;
+    left: -25px;
+    width: 500px;
+    height: 500px;
+    border: 1px solid #c69da7;
+    border-radius: 50%;
+}
+
+.floating-card {
+    position: absolute;
+    left: -50px;
+    bottom: 35px;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 15px 20px;
+    background: #fff;
+    box-shadow: 0 15px 35px rgba(80, 45, 53, 0.15);
+}
+
+.floating-card i {
+    color: #b88491;
+}
+
+.floating-card strong,
+.floating-card span {
+    display: block;
+}
+
+.floating-card strong {
+    font-size: 15px;
+}
+
+.floating-card span {
+    color: #88777b;
+    font-size: 11px;
+}
+
+/* ========== Hero CSS End ========== */
+
+
+/* ========== Brand CSS Start ========== */
+
+.brand-strip {
+    padding: 20px 0;
+    background: #463238;
+}
+
+.brand-items {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.brand-items span {
+    color: #f5e7ea;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+/* ========== Brand CSS End ========== */
+
+
+/* ========== Heading CSS Start ========== */
+
+.section-heading {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+.section-heading h2,
+.about-content h2,
+.review-title h2,
+.contact-info h2,
+.newsletter h2 {
+    margin-top: 12px;
+    font-family: "Playfair Display", serif;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 1.15;
+}
+
+.section-heading h2 em,
+.about-content h2 em,
+.review-title h2 em,
+.contact-info h2 em,
+.newsletter h2 em {
+    color: #a16c79;
+    font-style: italic;
+}
+
+.section-heading > p {
+    max-width: 390px;
+    color: #796a6e;
+    font-size: 14px;
+}
+
+/* ========== Heading CSS End ========== */
+
+
+/* ========== Products CSS Start ========== */
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+.product-image {
+    position: relative;
+    height: 390px;
+    overflow: hidden;
+    background: #f5e9eb;
+}
+
+.product-image img {
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.product-card:hover .product-image img {
+    transform: scale(1.06);
+}
+
+.badge {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    z-index: 3;
+    padding: 6px 10px;
+    background: #fff;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.heart {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    z-index: 3;
+    width: 38px;
+    height: 38px;
+    border: 0;
+    border-radius: 50%;
+    background: #fff;
+    transition: 0.3s;
+}
+
+.heart:hover {
+    color: #fff;
+    background: #a16c79;
+    transform: scale(1.08);
+}
+
+.product-info {
+    padding: 17px 3px;
+}
+
+.product-info > span {
+    color: #a16c79;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.product-info h3 {
+    margin: 5px 0 10px;
+    font-family: "Playfair Display", serif;
+    font-size: 19px;
+}
+
+.product-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.product-bottom strong {
+    font-size: 14px;
+}
+
+.product-bottom button {
+    width: 32px;
+    height: 32px;
+    border: 1px solid #ddd0d3;
+    background: transparent;
+    transition: 0.3s;
+}
+
+.product-bottom button:hover {
+    border-color: #a16c79;
+    color: #fff;
+    background: #a16c79;
+}
+
+.center-btn {
+    margin-top: 45px;
+    text-align: center;
+}
+
+.outline-btn {
+    padding: 13px 25px;
+    border: 1px solid #a16c79;
+    color: #7d5360;
+    font-size: 12px;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.outline-btn:hover {
+    color: #fff;
+    background: #a16c79;
+}
+
+/* ========== Products CSS End ========== */
+
+
+/* ========== About CSS Start ========== */
+
+.about {
+    background: #f9f3f4;
+}
+
+.about-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 90px;
+}
+
+.about-image {
+    position: relative;
+    padding-right: 40px;
+    padding-bottom: 40px;
+}
+
+.about-image::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 0;
+    width: 80%;
+    height: 80%;
+    border: 1px solid #cfaeb5;
+}
+
+.about-image img {
+    position: relative;
+    z-index: 1;
+    height: 520px;
+    object-fit: cover;
+}
+
+.experience {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background: #a16c79;
+}
+
+.experience strong {
+    font-family: "Playfair Display", serif;
+    font-size: 45px;
+    line-height: 1;
+}
+
+.experience span {
+    margin-top: 5px;
+    font-size: 10px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.about-content p {
+    max-width: 500px;
+    margin: 22px 0;
+    color: #76676b;
+    font-size: 14px;
+}
+
+/* ========== About CSS End ========== */
+
+
+/* ========== Features CSS Start ========== */
+
+.center-heading {
+    justify-content: center;
+    text-align: center;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border-top: 1px solid #eadfe1;
+    border-bottom: 1px solid #eadfe1;
+}
+
+.feature-card {
+    padding: 40px 25px;
+    border-right: 1px solid #eadfe1;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.feature-card:last-child {
+    border-right: 0;
+}
+
+.feature-card:hover {
+    transform: translateY(-8px);
+}
+
+.feature-icon {
+    width: 55px;
+    height: 55px;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: #a16c79;
+    background: #f5e6e9;
+    font-size: 20px;
+}
+
+.feature-card h3 {
+    margin-bottom: 10px;
+    font-family: "Playfair Display", serif;
+    font-size: 20px;
+}
+
+.feature-card p {
+    color: #827376;
+    font-size: 12px;
+}
+
+/* ========== Features CSS End ========== */
+
+
+/* ========== Reviews CSS Start ========== */
+
+.reviews {
+    color: #fff;
+    background: #463238;
+}
+
+.review-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    align-items: center;
+    gap: 100px;
+}
+
+.review-title h2 {
+    color: #fff;
+}
+
+.review-content {
+    padding-left: 60px;
+    border-left: 1px solid #80676e;
+}
+
+.stars {
+    margin-bottom: 20px;
+    color: #d8aab4;
+    letter-spacing: 5px;
+}
+
+.review-content p {
+    color: #f8eef0;
+    font-family: "Playfair Display", serif;
+    font-size: 24px;
+    line-height: 1.6;
+}
+
+.customer {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.customer-avatar {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #a16c79;
+}
+
+.customer strong,
+.customer span {
+    display: block;
+}
+
+.customer strong {
+    font-size: 13px;
+}
+
+.customer span {
+    color: #bdaeb1;
+    font-size: 10px;
+}
+
+/* ========== Reviews CSS End ========== */
+
+
+/* ========== Newsletter CSS Start ========== */
+
+.newsletter {
+    padding: 80px 0;
+    background: #f7e9ec;
+}
+
+.newsletter-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.newsletter h2 {
+    font-size: 40px;
+}
+
+.newsletter p {
+    margin-top: 10px;
+    color: #78676c;
+    font-size: 13px;
+}
+
+.newsletter-form {
+    display: flex;
+    min-width: 450px;
+    border-bottom: 1px solid #98747d;
+}
+
+.newsletter-form input {
+    width: 100%;
+    padding: 15px 0;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+
+.newsletter-form button {
+    border: 0;
+    background: transparent;
+    color: #7f5661;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+/* ========== Newsletter CSS End ========== */
+
+
+/* ========== Contact CSS Start ========== */
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 100px;
+}
+
+.contact-info > p {
+    margin: 20px 0 30px;
+    color: #796b6f;
+}
+
+.contact-item {
+    display: flex;
+    gap: 15px;
+    margin-top: 22px;
+}
+
+.contact-item > i {
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: #a16c79;
+    background: #f5e7e9;
+}
+
+.contact-item span,
+.contact-item a {
+    display: block;
+}
+
+.contact-item span {
+    margin-bottom: 2px;
+    color: #968589;
+    font-size: 10px;
+}
+
+.contact-item a {
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.contact-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 15px;
+    border: 1px solid #e4d9dc;
+    outline: none;
+    font-size: 13px;
+    resize: none;
+    transition: 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #a16c79;
+}
+
+.contact-form textarea {
+    grid-column: 1 / -1;
+}
+
+.contact-form .primary-btn {
+    border: 0;
+    justify-self: start;
+}
+
+/* ========== Contact CSS End ========== */
+
+
+/* ========== Footer CSS Start ========== */
+
+.footer {
+    padding: 70px 0 25px;
+    color: #fff;
+    background: #2e2226;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+    padding-bottom: 60px;
+}
+
+.footer-brand .logo {
+    color: #fff;
+}
+
+.footer-brand p {
+    margin: 10px 0 20px;
+    color: #a99a9e;
+    font-size: 13px;
+}
+
+.socials {
+    display: flex;
+    gap: 10px;
+}
+
+.socials a {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #59484d;
+    transition: 0.3s;
+}
+
+.socials a:hover {
+    border-color: #a16c79;
+    background: #a16c79;
+}
+
+.footer-links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 80px;
+}
+
+.footer-links h4 {
+    margin-bottom: 18px;
+    font-size: 13px;
+}
+
+.footer-links a {
+    display: block;
+    margin-bottom: 9px;
+    color: #a99a9e;
+    font-size: 12px;
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    padding-left: 4px;
+    color: #fff;
+}
+
+.footer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    border-top: 1px solid #4a3b40;
+    color: #8f8084;
+    font-size: 10px;
+}
+
+.footer-bottom div {
+    display: flex;
+    gap: 25px;
+}
+
+/* ========== Footer CSS End ========== */
+
+
+/* ========== Responsive CSS Start ========== */
+
+@media (max-width: 991px) {
+
+    .nav-menu {
+        gap: 18px;
+    }
+
+    .hero-text h1 {
+        font-size: 60px;
+    }
+
+    .products {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .feature-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .feature-card:nth-child(2) {
+        border-right: 0;
+    }
+
+    .feature-card:nth-child(1),
+    .feature-card:nth-child(2) {
+        border-bottom: 1px solid #eadfe1;
+    }
+
+    .about-wrapper {
+        gap: 50px;
+    }
+
+    .review-wrapper {
+        gap: 50px;
+    }
+
+    .contact-grid {
+        gap: 50px;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .section {
+        padding: 70px 0;
+    }
+
+    .nav-menu,
+    .nav-icons {
+        display: none;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .hero {
+        min-height: auto;
+        padding-bottom: 70px;
+    }
+
+    .hero-content {
+        grid-template-columns: 1fr;
+        min-height: auto;
+        padding-top: 130px;
+    }
+
+    .hero-text {
+        padding-top: 0;
+    }
+
+    .hero-text h1 {
+        font-size: 55px;
+    }
+
+    .hero-image {
+        margin: 20px auto 0;
+    }
+
+    .hero-image img {
+        height: 450px;
+    }
+
+    .image-circle {
+        width: 420px;
+        height: 420px;
+    }
+
+    .floating-card {
+        left: 10px;
+    }
+
+    .brand-items {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .section-heading {
+        display: block;
+    }
+
+    .section-heading > p {
+        margin-top: 20px;
+    }
+
+    .section-heading h2,
+    .about-content h2,
+    .review-title h2,
+    .contact-info h2 {
+        font-size: 40px;
+    }
+
+    .about-wrapper,
+    .review-wrapper,
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-image {
+        padding-right: 20px;
+    }
+
+    .review-content {
+        padding: 35px 0 0;
+        border-top: 1px solid #80676e;
+        border-left: 0;
+    }
+
+    .newsletter-box {
+        display: block;
+    }
+
+    .newsletter-form {
+        min-width: 0;
+        margin-top: 30px;
+    }
+
+    .footer-top {
+        display: block;
+    }
+
+    .footer-links {
+        margin-top: 50px;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .container {
+        padding: 0 15px;
+    }
+
+    .hero-text h1 {
+        font-size: 46px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .products {
+        grid-template-columns: 1fr;
+    }
+
+    .product-image {
+        height: 430px;
+    }
+
+    .feature-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .feature-card {
+        border-right: 0;
+        border-bottom: 1px solid #eadfe1;
+    }
+
+    .feature-card:last-child {
+        border-bottom: 0;
+    }
+
+    .contact-form {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-form textarea {
+        grid-column: auto;
+    }
+
+    .footer-links {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .footer-bottom {
+        display: block;
+    }
+
+    .footer-bottom div {
+        margin-top: 10px;
+    }
+}
+
+/* ========== Responsive CSS End ========== */
